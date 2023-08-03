@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\client",
+    "\\src\\client\\js",
+    "\\src\\client\\media",
+    "\\src\\client\\styles",
+    "\\src\\client\\views",
+    "\\src\\server"
+  ],
+  "SelectedNode": "\\src\\client\\js\\formHandler.js",
+  "PreviewInSolutionExplorer": false
+}

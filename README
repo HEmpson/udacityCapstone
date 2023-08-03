@@ -1,0 +1,9 @@
+# CAPSTONE PROJECT
+
+## Overview
+This project calls several APIs and displays this information dynamically on the UI. This project utilises webpack and can be started in dev mode with 'npm build-dev', it can 
+also be started in prod mode by running 'npm build-prod' and then 'npm-start'. This project also utilises jest for testing purposes and can be started with 'npm test'
+
+# Ways to stand out
+
+I have chosen to include the number of days until the departure date as my extra task :)

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Capstone Proj</title>
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-title">
+            Travel Planner
+        </div>
+    </header>
+
+    <main>
+        <section id="main-section">
+
+            <section id="input">
+                <section id="form-section">
+                    <form class="form" onsubmit="return handleSubmit(event)">
+                        <h2>Where are you travelling?</h2>
+                        <input id="destination" type="text" name="input" value="" placeholder="Destination">
+                        <input id="departDate" type="date" name="input" value="" placeholder="departDate" />
+                        <input class="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    </form>
+                    <h3 id="daysAway"></h3>
+                </section>
+
+                <section id="results">
+                    <h2 id="text"></h2>
+                    <h2 id="now"></h2>
+                    <h2 id="wind"></h2>
+                    <h2 id="high"></h2>
+                    <h2 id="low"></h2>
+                </section>
+            </section>
+
+            <section id="photo-section">
+                <img id="photo" src="https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1580493890249.jpg" />
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">Copyright 2023 - Made by Harry E</p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>

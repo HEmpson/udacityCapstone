@@ -1,0 +1,61 @@
+#input {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#form-section {
+    border-radius: 20px;
+    box-shadow: 0 2px 8px grey;
+    padding: 5px;
+}
+
+h2, h3 {
+    font-family: Chivo, sans-serif;
+}
+
+#photo{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    
+}
+
+#photo-section {
+    margin: 5%;
+}
+
+#main-section {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.submit{
+    background-color: lightblue;
+    border-radius: 10px;
+
+    &:hover{
+        background-color:deepskyblue;
+    }
+}
+
+@media(max-width: 1200px) {
+    #main-section {
+        grid-template-columns: 1fr;
+    }
+
+    h2{
+        font-size: 5vw;
+    }
+
+    #destination, #departDate, .submit{
+        font-size: 3vw;
+    }
+
+}
